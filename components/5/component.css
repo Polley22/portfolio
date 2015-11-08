@@ -1,4 +1,51 @@
 /* Component Stylesheet 
 ============================================================
 ============================================================*/
+html, body {
+  height: 100%;
+  background: #8B909C;
 
+}
+article{
+  min-height: 100%;
+  margin-bottom: -125px; 
+}
+article:after {
+  content: "";
+  display: block;
+}
+footer, article:after {
+  height: 135px; 
+}
+footer {
+  background: #3F3F3F;
+  text-align:center;
+  color:#23ffff;
+}
+
+img {
+	float:right;
+	padding-right:250px;
+	padding-top:25px;
+}
+ul{
+	float:left;
+	padding-top:35px;
+	padding-left:250px;
+	list-style:none;
+}
+
+li{
+	padding:2px;
+	
+}
+
+p{
+	clear:left;
+	color:#8b909c;
+	
+}
+
+a:hover {
+	color:#8B909C;
+}

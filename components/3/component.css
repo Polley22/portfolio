@@ -2,3 +2,58 @@
 ============================================================
 ============================================================*/
 
+* {
+	margin: 0; 
+	padding: 0;
+}
+
+body {
+	background: #242424;
+}
+
+article{
+	width: 640px; 
+	position: relative;
+	padding-top: 320px;
+	margin: 100px auto;
+	box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.75);
+}
+
+article>img{
+	position: absolute;
+	left: 0; top: 0;
+	transition: all 0.5s;
+}
+
+article input[name='slide_switch'] {
+	display: none;
+}
+
+article label {
+	margin: 18px 0 0 18px;
+	border: 3px solid #999;
+	float: left;
+	cursor: pointer;
+	transition: all 0.5s;
+	opacity: 0.6;
+}
+
+article label img{
+	display: block;
+}
+
+article input[name='slide_switch']:checked+label {
+	border-color: #666;
+	opacity: 1;
+}
+
+article input[name='slide_switch'] ~ img {
+	opacity: 0;
+	transform: scale(1.1);
+}
+
+article input[name='slide_switch']:checked+label+img {
+	opacity: 1;
+	transform: scale(1);
+}
+
