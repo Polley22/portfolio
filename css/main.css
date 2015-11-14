@@ -2,13 +2,12 @@
 ============================================================
 ============================================================*/
 body {
-	font: Arial, Helvetica, sans-serif;
+	font-family:"Comic Sans MS", cursive, sans-serif;
 	color: #000000;
 	padding: 0px;
  	background-color:#CCC;
  	margin: auto;
 	background: #242424;
-	font-weight:90;
     width: 60%;
 }
 	
@@ -30,6 +29,7 @@ header{
 	float:right;
 	background-image:url(../image/bg.jpg);
 	border: ridge 3px #23ffff;
+	border-radius:25px;
 	margin-bottom:15px;
 }
 
@@ -40,11 +40,23 @@ section{
 	
 }
 
+section p {
+	float:none;
+}
+
+section img{
+	max-width:175px;
+	border-radius:200px;
+	border: 3px solid #23ffff;
+	float:right;
+
+}
+
 img{
 border: solid 3px #23ffff;
+border-radius:15px;
 width: 100%;
 text-align: center;
-
 }
 
 h1{
@@ -58,11 +70,12 @@ h1{
 
 article{
 	margin: 10px ;
-	margin-bottom:10px;
+	margin-bottom:50px;
 	padding: 20px;
-	
 	background: #8b909c;
 	color: #303030;
+	box-shadow: 15px 15px 10px #8B8B8B;
+	border-radius:25px;
 }
 
 h2{
@@ -70,25 +83,38 @@ h2{
 	font-size: 1.5em;
 	padding-bottom:10px;
 	padding-top:10px;
-	padding-left:15px;
 }
 
 h3{
 	font-size: 1.25em;
-	text-decoration: underline;
 	padding: 2px;
 }
 
 p{
-	font-size: 1.15em;
+	font-size: 1em;
 	padding: 2px;
+	padding-bottom:10px;
+
 }
 
 button {
    border: solid 1.5px #23ffff;
    margin-top: 10px;
-  
    background: #8b909c;
+   padding: 8.5px 17px;
+   border-radius: 14px;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: white;
+   font-size: 18px;
+   text-decoration: none;
+   vertical-align: middle;    
+}
+
+button:hover {
+   border: solid 2.5px #23ffff;
+   margin-top: 10px;
+   background: #303030;
    padding: 8.5px 17px;
    border-radius: 14px;
    box-shadow: rgba(0,0,0,1) 0 1px 0;
@@ -102,5 +128,10 @@ button {
 footer{
 	font-size: 0.8em; 
 	color:#303030;
+	text-align: right;
+}
+footer:hover{
+	font-size: 0.8em; 
+	color:#000000;
 	text-align: right;
 }
