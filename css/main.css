@@ -8,7 +8,7 @@ body {
  	background-color:#CCC;
  	margin: auto;
 	background: #242424;
-    width: 60%;
+    width: 75%;
 }
 	
 header{
@@ -112,7 +112,7 @@ button {
 }
 
 button:hover {
-   border: solid 2.5px #23ffff;
+   border: solid 1.5px #23ffff;
    margin-top: 10px;
    background: #303030;
    padding: 8.5px 17px;
